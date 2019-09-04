@@ -73,3 +73,9 @@ INSERT INTO Project_status
 VALUES
 (20150507,"山水家园","卢村",26632358.93,0,0,"李玉山 万科 董碧林"),
 (20190807,"盛世展厅","图论",25623465.71,37262424,54,"李玉山 万科 董碧林");
+INSERT INTO Employee
+VALUES
+( null,"1","1","1392357348","总经理",null,null,"年薪","毛科");
+INSERT INTO Employee
+VALUES
+( null,"2","2","153357348","生产经理",null,null,"月薪","毛科");
