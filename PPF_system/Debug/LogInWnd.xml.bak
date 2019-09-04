@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="581,399" sizebox="4,4,4,4" caption="0,0,0,32" mininfo="600,400">
+    <VerticalLayout enabled="true" width="581" height="320" bkimage="login.jpg" bkcolor="#FFFFFFFF">
+        <Label float="true" pos="53,44,0,0" enabled="true" width="341" height="59" bkimage="标题栏.jpg" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Button name="BT_MIN" float="true" pos="505,6,0,0" enabled="true" width="31" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;1,0,31,20&apos;" hotimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;33,0,63,20&apos;" pushedimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;65,0,95,20&apos;" />
+        <Button name="BT_CLOSE" float="true" pos="543,6,0,0" enabled="true" width="34" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_sys_close.png&apos; source=&apos;1,0,33,20&apos;" hotimage="file=&apos;btn_sys_close.png&apos; source=&apos;33,0,65,20&apos;" pushedimage="file=&apos;btn_sys_close.png&apos; source=&apos;65,0,95,20&apos;" />
+        <Label name="NAME" float="true" pos="67,149,0,0" enabled="true" width="20" height="17" bkimage="person.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Label name="PWD" float="true" pos="67,192,0,0" enabled="true" width="20" height="15" bkimage="passwd.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Edit name="USERNAME" float="true" pos="105,141,0,0" enabled="true" width="176" height="30" bkimage="Button_Non.png" bkcolor="#FFFFFFFF" bordercolor="#00808080" focusbordercolor="#00C0DCC0" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="15" />
+        <Edit name="PASSWORD" float="true" pos="105,190,0,0" enabled="true" width="176" height="30" bkimage="Button_Non.png" bkcolor="#FFFFFFFF" bordercolor="#00808080" focusbordercolor="#00C0DCC0" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" password="true" font="15" textpadding="0,0,0,0"/>
+        <Button name="BT_LOGIN" text="登   录" float="true" pos="108,247,0,0" enabled="true" width="149" height="32" bkimage="file=&apos;btn_onekey_clean.png&apos; source=&apos;0,0,80,32&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_onekey_clean.png&apos; source=&apos;0,0,80,32&apos;" hotimage="file=&apos;btn_onekey_clean.png&apos; source=&apos;80,0,160,32&apos;" />
+    </VerticalLayout>
+</Window>

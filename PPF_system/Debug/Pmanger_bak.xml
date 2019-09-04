@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="941,649" caption="0,0,0,32">
+    <VerticalLayout enabled="true" width="106" height="36" bkimage="skin/main背景.jpg" bkcolor="#FFA0A0A4">
+        <HorizontalLayout name="Heading" enabled="true" width="940" height="34">
+            <Button name="BT_CLOSE" float="true" pos="894,0,0,0" enabled="true" width="47" height="35" bkcolor="#FFFF0000" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;Common.bmp&apos; source=&apos;0,61,39,78&apos;" hotimage="file=&apos;Common.bmp&apos; source=&apos;41,61,80,78&apos;" pushedimage="file=&apos;Common.bmp&apos; source=&apos;82,61,121,78&apos;" />
+            <Button name="BT_MIN" float="true" pos="847,0,0,0" enabled="true" width="47" height="35" bkcolor="#FFFFFF00" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;Common.bmp&apos; source=&apos;1,41,26,58&apos;" hotimage="file=&apos;Common.bmp&apos; source=&apos;28,41,53,58&apos;" pushedimage="file=&apos;Common.bmp&apos; source=&apos;55,41,79,58&apos;" />
+        </HorizontalLayout>
+        <Edit name="EDIT_NAME" float="true" pos="107,54,0,0" enabled="true" width="162" height="38" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Edit name="EDIT_SUR_COUNT" float="true" pos="391,53,0,0" enabled="true" width="63" height="38" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Edit name="EDIT_BUY_COUNT" text="1" float="true" pos="670,55,0,0" enabled="true" width="58" height="38" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Button name="BT_ADD" text="+" float="true" pos="638,66,0,0" enabled="true" width="25" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+        <Button name="BT_SUB" text="-" float="true" pos="739,64,0,0" enabled="true" width="25" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+        <Label name="GOODNAME" text=" 商品名称：" float="true" pos="20,52,0,0" enabled="true" width="65" height="38" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Label name="GOODSURCOUNT" text=" 库存剩余" float="true" pos="298,54,0,0" enabled="true" width="65" height="38" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Button name="BT_SELECT" text="查询" float="true" pos="492,57,0,0" enabled="true" width="107" height="34" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+        <List name="GOOD_LIST" float="true" pos="20,110,0,0" enabled="true" width="750" height="520" bkcolor="#FFA0A0A4" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="List/list_header_bg.png">
+            <ListHeader name="domain" enabled="true" bkimage="List/list_header_bg.png">
+                <ListHeaderItem text="商品" enabled="true" width="300" height="23" bkimage="skin/ListRes/list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="skin/ListRes/list_header_hot.png" pushedimage="skin/ListRes/list_header_pushed.png" sepimage="skin/ListRes/list_header_sep.png" />
+                <ListHeaderItem text="价格" enabled="true" width="100" height="23" bkimage="skin/ListRes/list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="skin/ListRes/list_header_hot.png" pushedimage="skin/ListRes/list_header_pushed.png" sepimage="skin/ListRes/list_header_sep.png" />
+                <ListHeaderItem text="数量" enabled="true" width="100" height="23" bkimage="skin/ListRes/list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="skin/ListRes/list_header_hot.png" pushedimage="skin/ListRes/list_header_pushed.png" sepimage="skin/ListRes/list_header_sep.png" />
+                <ListHeaderItem text="单位" enabled="true" width="100" height="23" bkimage="skin/ListRes/list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="skin/ListRes/list_header_hot.png" pushedimage="skin/ListRes/list_header_pushed.png" sepimage="skin/ListRes/list_header_sep.png" />
+                <ListHeaderItem text="合计" enabled="true" width="147" height="23" bkimage="skin/ListRes/list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="skin/ListRes/list_header_hot.png" pushedimage="skin/ListRes/list_header_pushed.png" sepimage="skin/ListRes/list_header_sep.png" />
+            </ListHeader>
+        </List>
+        <Label name="TOTAL" text="  总价格" float="true" pos="827,238,0,0" enabled="true" width="65" height="38" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Edit name="EDIT_PRICE" float="true" pos="774,306,0,0" enabled="true" width="162" height="38" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        <Button name="BT_CONFIRM" text="确认售出" float="true" pos="806,387,0,0" enabled="true" width="106" height="36" bkimage="file=&apos;button_down.bmp&apos; source=&apos;1,1,0,0&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+        <Button name="BT_CANAEL" text="取消商品" float="true" pos="806,470,0,0" enabled="true" width="106" height="36" bkimage="botton.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+    </VerticalLayout>
+</Window>

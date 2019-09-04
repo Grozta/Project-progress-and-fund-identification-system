@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="941,649" caption="0,0,0,32">
+    <VerticalLayout enabled="true" width="941" height="521" bkimage="Gm_bk.jpg" bkcolor="#FFA0A0A4">
+        <HorizontalLayout name="Heading" enabled="true" width="940" height="34">
+            <Button name="BT_CLOSE" float="true" pos="913,0,0,0" enabled="true" width="30" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_sys_close.png&apos; source=&apos;2,0,32,20&apos;" hotimage="file=&apos;btn_sys_close.png&apos; source=&apos;33,0,66,20&apos;" pushedimage="file=&apos;btn_sys_close.png&apos; source=&apos;66,0,96,20&apos;" />
+            <Button name="BT_MIN" float="true" pos="874,0,0,0" enabled="true" width="30" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;1,0,33,20&apos;" hotimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;33,0,66,20&apos;" pushedimage="file=&apos;btn_sys_minimize.png&apos; source=&apos;66,0,96,20&apos;" />
+            <Label float="true" pos="0,0,0,0" enabled="true" width="55" height="34" bkimage="LOGO.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="HLOG" float="true" pos="55,0,0,0" enabled="true" width="355" height="34"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        </HorizontalLayout>
+        <HorizontalLayout name="Option" enabled="true" width="937" height="41">
+            <Option name="OPTION_EMPLOYEE" selected="true" text="员工操作" float="true" pos="13,2,0,0" enabled="true" width="126" height="35" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="a"    />
+            <Option name="OPTION_AUDIT" text="申请审核" float="true" pos="139,2,0,0" enabled="true" width="126" height="35" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="a"  />
+            <Option name="OPTION_MANAGE" text="项目管理" float="true" pos="256,2,0,0" enabled="true" width="126" height="35" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="a"  />
+            <Option name="OPTION_PROCESS" text="生产进度" float="true" pos="382,2,0,0" enabled="true" width="126" height="35" bkimage="tab_select.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="a"  />
+        </HorizontalLayout>
+        <TabLayout name="TabLayOut" enabled="true">
+            <VerticalLayout enabled="true" width="941" height="550">
+                <Edit name="id" text="工号" enabled="true" width="50" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="name" text="姓名" float="true" pos="50,0,0,0" enabled="true" width="50" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="tel" text="电话" float="true" pos="100,0,0,0" enabled="true" width="150" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Combo name="pos" text="普通员工" float="true" pos="250,0,0,0" enabled="true" width="50" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" hotimage="Combo_over.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                  <ListLabelElement text="普通员工" selected="true" />
+                	<ListLabelElement text="队长" />
+                	<ListLabelElement text="生产经理" />
+                	<ListLabelElement text="总经理" />
+                </Combo>
+                <Edit name="sub_Project" text="所属项目" float="true" pos="301,0,0,0" enabled="true" width="150" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="mag_Project" text="所管理项目" float="true" pos="450,0,0,0" enabled="true" width="150" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Combo name="pay_Method"  float="true" pos="600,0,0,0" enabled="true" width="50" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" hotimage="Combo_over.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                  <ListLabelElement text="时薪" selected="true" />
+                	<ListLabelElement text="月薪" />
+                	<ListLabelElement text="年薪" />
+                </Combo>
+                <Edit name="superior" text="上级领导" float="true" pos="650,0,0,0" enabled="true" width="150" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <List name="List" float="true" pos="0,40,0,0" enabled="true" width="800" height="465" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="list_header_bg.png" vscrollbar="true" hscrollbar="true">
+                    <ListHeader name="domain" enabled="true" bkimage="List/list_header_bg.png">
+                        <ListHeaderItem text="序号" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="工号" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="姓名" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="电话" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="职位" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="所属项目" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="所管理项目" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="支付方式" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="上级领导" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="密码" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                    </ListHeader>
+                    
+                </List>
+                <Button name="BT_SELECT" text="查询" float="true" pos="829,229,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" />
+                <Button name="BT_INSERT" text="插入" float="true" pos="830,325,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" focusedimage="Button_Non.png" />
+                <Button name="BT_DELETE" text="删除" float="true" pos="830,431,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" />
+                <Combo name="CHOOSE"  float="true" pos="830,110,0,0" enabled="true" width="85" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" hotimage="Combo_over.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                  <ListLabelElement text="ALL" selected="true" />
+                  <ListLabelElement text="工号" />
+                  <ListLabelElement text="姓名" />
+                	<ListLabelElement text="电话" />
+                	<ListLabelElement text="职位" />
+                	<ListLabelElement text="所属项目" />
+                	<ListLabelElement text="管理项目" />
+                	<ListLabelElement text="支付方式" />
+                	<ListLabelElement text="上级领导" />
+                </Combo>
+                <Edit name="pwd" text="在此输入密码" float="true" pos="164,525,0,0" enabled="true" width="140" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="pwd_confirm" text="请再次输入密码" float="true" pos="503,526,0,0" enabled="true" width="140" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Label name="P" text="     密码" float="true" pos="58,525,0,0" enabled="true" width="84" height="30" bkimage="botton.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Label name="PC" text="   确认密码" float="true" pos="379,526,0,0" enabled="true" width="87" height="30" bkimage="botton.bmp" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout>
+            
+            
+  
+            
+            <VerticalLayout  width="941" height="550">
+                <List name="List_1" float="true" pos="0,5,0,0" enabled="true" width="800" height="545" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="list_header_bg.png" vscrollbar="true" hscrollbar="true">
+                   <ListHeader name="L_1"  enabled="true" bkimage="list_header_bg.png">
+                        <ListHeaderItem text="序号" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="流水号" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="提交人" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="工号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="职位" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目名" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目编号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="审核状态" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        
+                        <ListHeaderItem text="申请资金" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="生产经理" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="完成率" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                    </ListHeader>
+                </List>
+                <Button name="BT_AGREE_1" text="同意" float="true" pos="830,65,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" focusedimage="Button_Non.png" />
+                <Button name="BT_AGAINST_1" text="不同意" float="true" pos="830,165,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" focusedimage="Button_Non.png" />
+            </VerticalLayout>
+
+
+  					<VerticalLayout  width="941" height="550">
+  						  <Edit name="id_1" text="项目编号" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="name_1" text="项目名称" float="true" pos="80,0,0,0" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="producter_1" text="生产经理" float="true" pos="160,0,0,0" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="captain_1" text="队长" float="true" pos="240,0,0,0" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="cRate_1" text="项目完成率" float="true" pos="320,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="usedFund_1" text="已使用资金" float="true" pos="420,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="totalFund_1" text="项目总额" float="true" pos="520,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Button name="BT_CREATE_PROJECT_1" text="创建项目" float="true" pos="830,65,0,0" enabled="true" width="85" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" focusedimage="Button_Non.png" />
+                <Button name="BT_DELETE_PROJECT_1" text="删除项目" float="true" pos="830,165,0,0" enabled="true" width="85" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" focusedimage="Button_Non.png" />
+                
+                <List name="List_2" float="true" pos="0,35,0,0" enabled="true" width="800" height="545" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="list_header_bg.png" vscrollbar="true" hscrollbar="true">
+                    <ListHeader name="L_2" enabled="true" bkimage="list_header_bg.png">
+                    	  <ListHeaderItem text="序号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目编号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目名称" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="生产经理" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="队长" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目完成率" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="已使用资金" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目总额" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        </ListHeader>  
+                </List>
+  					</VerticalLayout>
+
+
+            <VerticalLayout enabled="true">
+                <Edit name="id_2" text="申请人" enabled="true" width="50" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="name_2" text="工号" float="true" pos="50,0,0,0" enabled="true" width="50" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Combo name="pos_2" text="职位" float="true" pos="100,0,0,0" enabled="true" width="80" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" hotimage="Combo_over.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                  <ListLabelElement text="普通员工" selected="true" />
+                	<ListLabelElement text="队长" />
+                	<ListLabelElement text="生产经理" />
+                	<ListLabelElement text="总经理" />
+                </Combo>
+                <Edit name="sub_Project_2" text="项目编号" float="true" pos="180,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="sub_Project_2" text="项目名称" float="true" pos="280,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="mag_Project_2" text="生产经理" float="true" pos="380,0,0,0" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="superior_2" text="本次完成量" float="true" pos="460,0,0,0" enabled="true" width="80" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="superior_2" text="完成率" float="true" pos="540,0,0,0" enabled="true" width="50" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Edit name="superior_2" text="本次申请资金" float="true" pos="590,0,0,0" enabled="true" width="100" height="30" bkimage="Button_Non.png" bkcolor="#FF008000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <List name="List_3" float="true" pos="0,40,0,0" enabled="true" width="800" height="495" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itembkcolor="#FFE2DDDF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" headerbkimage="list_header_bg.png" vscrollbar="true" hscrollbar="true">
+                    <ListHeader name="domain" enabled="true" bkimage="List/list_header_bg.png">
+                        <ListHeaderItem text="序号" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="申请人" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="申请人工号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="职位" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目编号" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="项目名称" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="生产经理" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="本次作业量" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="完成率" enabled="true" width="50" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                        <ListHeaderItem text="本次申请资金" enabled="true" width="100" height="23" bkimage="list_header_bg.png" minwidth="16" textcolor="#FF000000" sepwidth="1" align="center" hotimage="list_header_hot.png" pushedimage="list_header_pushed.png" sepimage="list_header_sep.png" />
+                    </ListHeader>
+                </List>
+                <Button name="BT_SELECT_2" text="查询" float="true" pos="829,229,0,0" enabled="true" width="85" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Button_Non.png" hotimage="Button_Hot.png" pushedimage="Button_Non.png" />
+                <Combo name="CHOOSE_2"  float="true" pos="830,110,0,0" enabled="true" width="85" height="30" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" hotimage="Combo_over.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                  <ListLabelElement text="ALL" selected="true" />
+                  <ListLabelElement text="工号" />
+                  <ListLabelElement text="姓名" />
+                	<ListLabelElement text="电话" />
+                	<ListLabelElement text="职位" />
+                	<ListLabelElement text="所属项目" />
+                	<ListLabelElement text="管理项目" />
+                	<ListLabelElement text="支付方式" />
+                	<ListLabelElement text="上级领导" />
+                </Combo>
+                
+            </VerticalLayout>
+               
+        </TabLayout>
+    </VerticalLayout>
+</Window>
