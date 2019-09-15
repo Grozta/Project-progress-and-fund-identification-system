@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/9/8 星期日 下午 12:06:48。
+﻿生成启动时间为 2019/9/15 星期日 下午 9:02:21。
      1>项目“E:\PPF identification system\Project-progress-and-fund-identification-system\PPF_system\PPF_system\PPF_system.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Software\VC\bin\CL.exe /c /I"E:\PPF identification system\Project-progress-and-fund-identification-system\PPF_system\DuiLib" /I"C:\Program Files (x86)\MySQL\MySQL Server 5.5\include" /Z7 /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D WIN32_LEAN_AND_MEAN /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Gmanger.cpp
@@ -25,4 +25,4 @@
 
 生成成功。
 
-已用时间 00:00:01.72
+已用时间 00:00:03.05
